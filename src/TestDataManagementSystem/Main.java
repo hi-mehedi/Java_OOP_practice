@@ -2,7 +2,7 @@ package TestDataManagementSystem;
 
 public class Main {
     public static void main(String[] args) {
-        TestData  test1 = new TestData(101,"Login Page",false, 2.35, 5);
+        TestData  test1 = new TestData(101,"Login Page",false, 2.35, 9);
         TestUtility.practiceOperator();
         double score = TestUtility.calculatorPriorityScore(test1);
         System.out.println("Priority Score : " +score);
@@ -10,6 +10,6 @@ public class Main {
         System.out.println("Priority Score : "+score1);
         System.out.println(TestUtility.getStatusMessage(1));
         System.out.println(TestUtility.formatTestResult(test1,1));
-        System.out.println("Test Priority : " +TestUtility.isValidPriority(1));
+        System.out.println("Test Priority : " +TestUtility.isValidPriority(2));
     }
 }
